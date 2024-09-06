@@ -20,7 +20,7 @@ namespaces = client_v1.list_namespace().items
 namespaces_exclude = ["kube-system", "kube-node-lease", "kube-public", "default", "dynatrace", "monitoring", "castai-agent", "gke-managed-system", "emissary-system", "ambassador"]
 
 # Crear directorio de respaldo si no existe
-backup_dir = "full-backup-k8s-sky-web-prod-2"
+backup_dir = "full-backup-k8s"
 os.makedirs(backup_dir, exist_ok=True)
 
 def run_command(command):
